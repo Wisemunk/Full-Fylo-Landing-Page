@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+nav {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60%;
+}
+
+@media (max-width: 1400px) {
+    nav {
+        gap: 40%;
+    }
+}
+
+nav img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color:  hsl(243, 87%, 12%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+#first_part, #second_part, #third_part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 50px;
+}
+
+@media (min-width: 1400px) {
+    #first_part, #second_part, #third_part {
+        padding: 50px 100px;
+    }
+}
+
+#first_part .illu, #second_part .illu {
+    width: 40%;
+}
+
+#second_part {
+    background: url("images/bg-curve-desktop.svg") no-repeat top;
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+    #second_part {
+        background: url("images/bg-curve-mobile.svg") no-repeat top;
+        background-size: cover;
+    }
+}
+
+form {
+    display: flex;
+    gap: 30px;
+}
+
+#fix_form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 20px;
+    width: 50%;
+    height: 50px;
+}
+
+
+main button {
+    background: hsl(224, 93%, 58%);
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+#second_part {
+    height: 900px;
+}
+
+#sub_second {
+    margin-top: 30px;
+    background: white;
+    padding: 30px 50px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.2);
+}
+
+@media (min-width: 1400px) {
+    #sub_second {
+        width: 60%;
+    }
+}
+
+#fix {
+    display: flex;
+    color: hsl(170, 45%, 43%);
+    gap: 5px;
+    text-decoration: none;
+    width: 196px;
+    height: 30px;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+}
+
+#fix img {
+    width: 25px;
+    height: 25px;
+}
+
+#fix:hover {
+    opacity: 0.8;
+}
+
+#sub_second #avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#quotes {
+    height: 20px;
+    width: 20px;
+}
+
+#sub_second div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+
+#sub_second div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 14px;
+}
+
+#third_part {
+    align-items: center;
+    background: hsl(238, 22%, 44%);
+    color: white;
+    height: 300px;
+}
+
+#fix_form {
+    width: 50%;
+}
+
+#email {
+    width: 80%;
+}
+
+
+#logo path {
+    fill: white;
+}
+
+footer {
+    background:  hsl(243, 87%, 12%);
+    color: white;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 100px;
+    gap: 50px;
+}
+
+#footer_all {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#footer_all div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 20px;
+}
+
+#footer_all div img {
+    width: 20px;
+    height: 20px;
+}
+
+.sub_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#socials {
+    gap: 20px;
+    text-align: center;
+}
+
+.fab {
+    margin: 2%;
+    padding: 10px 2px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    text-decoration: none;
+    display: inline-block;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+}
